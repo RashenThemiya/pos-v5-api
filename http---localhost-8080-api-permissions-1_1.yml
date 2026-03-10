@@ -1,0 +1,17 @@
+info:
+  name: http://localhost:8080/api/permissions/1_1
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: http://localhost:8080/api/permissions/1
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_ACCESS_TOKEN
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

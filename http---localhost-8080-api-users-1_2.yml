@@ -1,0 +1,32 @@
+info:
+  name: http://localhost:8080/api/users/1_2
+  type: http
+  seq: 21
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/users/1
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "email": "manager1updated@test.com",
+        "password": "new123456",
+        "type": "MANAGER",
+        "status": "ACTIVE",
+        "fullName": "Manager One Updated",
+        "phone": "0779999999",
+        "branchId": 1,
+        "isActive": true
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

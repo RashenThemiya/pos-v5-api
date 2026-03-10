@@ -1,0 +1,17 @@
+info:
+  name: http://localhost:8080/api/roles/1/permissions/2
+  type: http
+  seq: 15
+
+http:
+  method: DELETE
+  url: http://localhost:8080/api/roles/1/permissions/2
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

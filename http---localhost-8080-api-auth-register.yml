@@ -1,0 +1,33 @@
+info:
+  name: http://localhost:8080/api/auth/register
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/api/auth/register
+  headers:
+    - name: Authorization
+      value: Bearer yJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMDgxNDU0LCJleHAiOjE3NzMwODUwNTR9.Rcju8lVUL3SxCDDty84894IWAIrEuV2vf5R-YExUy1c
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+      "username": "superadmin2",
+        "email": "superadmin2@test.com",
+        "password": "123456",
+        "type": "SUPERADMIN",
+        "fullName": "Second Super Admin",
+        "phone": "0771111111",
+        "branchId": null
+        
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

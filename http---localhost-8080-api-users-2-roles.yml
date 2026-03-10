@@ -1,0 +1,25 @@
+info:
+  name: http://localhost:8080/api/users/2/roles
+  type: http
+  seq: 17
+
+http:
+  method: POST
+  url: http://localhost:8080/api/users/2/roles
+  headers:
+    - name: Authorization
+      value: Bearer ACCESS_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "roleId": 1
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

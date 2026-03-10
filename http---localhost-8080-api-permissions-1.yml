@@ -1,0 +1,28 @@
+info:
+  name: http://localhost:8080/api/permissions/1
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/permissions/1
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_ACCESS_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "code": "USER_CREATE",
+        "description": "Create system users",
+        "module": "USER"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

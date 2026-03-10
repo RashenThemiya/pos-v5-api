@@ -1,0 +1,27 @@
+info:
+  name: http://localhost:8080/api/roles/1
+  type: http
+  seq: 11
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/roles/1
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "name": "BRANCH_MANAGER",
+        "description": "Updated role",
+        "isActive": true
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

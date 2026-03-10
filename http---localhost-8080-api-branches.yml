@@ -1,0 +1,29 @@
+info:
+  name: http://localhost:8080/api/branches
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8080/api/branches
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMDgyMzMxLCJleHAiOjE3NzMwODU5MzF9.lXGpqXdV5mtfJ_07rZ2n_IJWCLQN5EMWM6Tso4cIpLk
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Main Branch",
+        "address": "Colombo",
+        "phone": "0771234567",
+        "timezone": "Asia/Colombo",
+        "isActive": true
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

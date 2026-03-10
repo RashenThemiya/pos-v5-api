@@ -1,0 +1,27 @@
+info:
+  name: http://localhost:8080/api/permissions
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8080/api/permissions
+  headers:
+    - name: Authorization
+      value: Bearer ACCESS_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "code": "PRODUCT_CREATE",
+        "description": "Create products",
+        "module": "PRODUCT"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
