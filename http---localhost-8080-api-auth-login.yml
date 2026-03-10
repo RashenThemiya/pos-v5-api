@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/api/auth/login
+  url: http://139.59.13.108:8080/api/auth/login
   headers:
     - name: Content-Type
       value: application/json
@@ -13,10 +13,8 @@ http:
     type: json
     data: |-
       {
-        "username": "admin",
-        "password": "admin123",
-        "device": "laptop",
-        "ipAddress": "127.0.0.1"
+        "username":"superadmin",
+        "password":"superadmin123"
       }
 
 settings:
