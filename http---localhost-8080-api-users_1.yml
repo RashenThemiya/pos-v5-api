@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8080/api/users
+  url: http://139.59.13.108:8080/api/users
   headers:
     - name: Authorization
       value: Bearer YOUR_TOKEN

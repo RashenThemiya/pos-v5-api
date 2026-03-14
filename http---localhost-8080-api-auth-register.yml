@@ -5,10 +5,10 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/api/auth/register
+  url: http://139.59.13.108:8080/api/auth/register
   headers:
     - name: Authorization
-      value: Bearer yJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMDgxNDU0LCJleHAiOjE3NzMwODUwNTR9.Rcju8lVUL3SxCDDty84894IWAIrEuV2vf5R-YExUy1c
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTAxNjEzLCJleHAiOjE3NzM1MDUyMTN9.dz58qOgyyRV0NZAoGNh4K8IC69GWZHSHoCakTXBxp9g
     - name: Content-Type
       value: application/json
   body:
