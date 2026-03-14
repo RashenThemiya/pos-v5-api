@@ -8,7 +8,7 @@ http:
   url: http://localhost:8080/api/users
   headers:
     - name: Authorization
-      value: Bearer YOUR_TOKEN
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMzQ5Nzc5LCJleHAiOjE3NzMzNTMzNzl9.3gHr8adXKwjZR8IqVO12e2qOXEiLBrtdICVXnvhLQPM
 
 settings:
   encodeUrl: true

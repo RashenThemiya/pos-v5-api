@@ -1,0 +1,31 @@
+info:
+  name: http://localhost:8080/api/items
+  type: http
+  seq: 34
+
+http:
+  method: POST
+  url: http://localhost:8080/api/items
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE4NzAzLCJleHAiOjE3NzM1MjIzMDN9.uFXI5rgUxWacinfhgukUmJAGcLzi7Y4i8u3IVSUBEwc
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "sku": "BEV-002",
+        "name": "Pepsi 330ml",
+        "categoryId": 1,
+        "isWeighed": false,
+        "isActive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

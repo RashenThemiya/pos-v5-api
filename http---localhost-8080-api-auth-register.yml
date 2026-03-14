@@ -8,7 +8,7 @@ http:
   url: http://localhost:8080/api/auth/register
   headers:
     - name: Authorization
-      value: Bearer yJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMDgxNDU0LCJleHAiOjE3NzMwODUwNTR9.Rcju8lVUL3SxCDDty84894IWAIrEuV2vf5R-YExUy1c
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMzQ3NzEyLCJleHAiOjE3NzMzNTEzMTJ9.Uousckg90lWr8I3QQ8DxzryFNnVrMgFFjTyRms_AXkc
     - name: Content-Type
       value: application/json
   body:

@@ -1,0 +1,29 @@
+info:
+  name: http://localhost:8080/api/categories
+  type: http
+  seq: 26
+
+http:
+  method: POST
+  url: http://localhost:8080/api/categories
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE1MDUyLCJleHAiOjE3NzM1MTg2NTJ9.1E7pprPREccQfjlDRuXeSJ8jBn5v0uVfqctxTMs5p4M
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "name": "Soft Drinks",
+        "parentId": 1,
+        "isActive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -10,14 +10,14 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMDgyMzMxLCJleHAiOjE3NzMwODU5MzF9.lXGpqXdV5mtfJ_07rZ2n_IJWCLQN5EMWM6Tso4cIpLk
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMzQ3NzEyLCJleHAiOjE3NzMzNTEzMTJ9.Uousckg90lWr8I3QQ8DxzryFNnVrMgFFjTyRms_AXkc
   body:
     type: json
     data: |-
       {
-        "name": "Main Branch",
-        "address": "Colombo",
-        "phone": "0771234567",
+        "name": "Main Branch 2",
+        "address": "Colombo 10",
+        "phone": "0777234567",
         "timezone": "Asia/Colombo",
         "isActive": true
       }
