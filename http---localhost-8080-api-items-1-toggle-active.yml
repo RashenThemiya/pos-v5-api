@@ -1,0 +1,33 @@
+info:
+  name: http://localhost:8080/api/items/1/toggle-active
+  type: http
+  seq: 41
+
+http:
+  method: PATCH
+  url: http://localhost:8080/api/items/1/toggle-active
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE4NzAzLCJleHAiOjE3NzM1MjIzMDN9.uFXI5rgUxWacinfhgukUmJAGcLzi7Y4i8u3IVSUBEwc
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "sku": "BEV-001",
+        "name": "Coca Cola 330ml Updated",
+        "categoryId": 1,
+        "isWeighed": false,
+        "isActive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Change active state of item

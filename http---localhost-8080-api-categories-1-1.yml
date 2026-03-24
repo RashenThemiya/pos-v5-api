@@ -1,0 +1,28 @@
+info:
+  name: http://localhost:8080/api/categories/1-1
+  type: http
+  seq: 31
+
+http:
+  method: DELETE
+  url: http://localhost:8080/api/categories/2
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE1MDUyLCJleHAiOjE3NzM1MTg2NTJ9.1E7pprPREccQfjlDRuXeSJ8jBn5v0uVfqctxTMs5p4M
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "name": "Beverages Updated",
+        "isActive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
