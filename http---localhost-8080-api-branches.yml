@@ -5,12 +5,12 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/api/branches
+  url: http://139.59.13.108:8080/api/branches
   headers:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMzQ3NzEyLCJleHAiOjE3NzMzNTEzMTJ9.Uousckg90lWr8I3QQ8DxzryFNnVrMgFFjTyRms_AXkc
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTAxNjEzLCJleHAiOjE3NzM1MDUyMTN9.dz58qOgyyRV0NZAoGNh4K8IC69GWZHSHoCakTXBxp9g
   body:
     type: json
     data: |-

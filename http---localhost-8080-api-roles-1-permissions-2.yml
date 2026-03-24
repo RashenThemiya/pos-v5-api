@@ -5,7 +5,7 @@ info:
 
 http:
   method: DELETE
-  url: http://localhost:8080/api/roles/1/permissions/2
+  url: http://139.59.13.108:8080/api/roles/1/permissions/2
   headers:
     - name: Authorization
       value: Bearer YOUR_TOKEN
