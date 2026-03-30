@@ -1,11 +1,11 @@
 info:
-  name: http://localhost:8080/api/items
+  name: http://localhost:8080/api/stock/transfers/1
   type: http
-  seq: 33
+  seq: 67
 
 http:
-  method: POST
-  url: http://localhost:8080/api/items
+  method: GET
+  url: http://localhost:8080/api/stock/transfers/1
   headers:
     - name: Content-Type
       value: application/json
@@ -13,16 +13,7 @@ http:
       value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0NTU4OTYxLCJleHAiOjE3NzQ1NjI1NjF9.cOjmynS1Eg_sonfIBfNpsGhyWEBP1nVy-MDLf9axMVI
   body:
     type: json
-    data: |-
-      {
-        "branchId": 1,
-        "sku": "BEV-003",
-        "name": "Pepsi 330ml new",
-        "categoryId": 1,
-        "isWeighed": false,
-        "isActive": true,
-        "brandId":2
-      }
+    data: ""
   auth: inherit
 
 settings:
@@ -30,3 +21,5 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+
+docs: Get All stock tranfers

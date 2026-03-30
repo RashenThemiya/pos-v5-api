@@ -8,7 +8,7 @@ http:
   url: http://localhost:8080/api/users
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMzQ5Nzc5LCJleHAiOjE3NzMzNTMzNzl9.3gHr8adXKwjZR8IqVO12e2qOXEiLBrtdICVXnvhLQPM
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE1MDUyLCJleHAiOjE3NzM1MTg2NTJ9.1E7pprPREccQfjlDRuXeSJ8jBn5v0uVfqctxTMs5p4M
 
 settings:
   encodeUrl: true

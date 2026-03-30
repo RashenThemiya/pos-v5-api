@@ -10,14 +10,14 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczMzQ3NzEyLCJleHAiOjE3NzMzNTEzMTJ9.Uousckg90lWr8I3QQ8DxzryFNnVrMgFFjTyRms_AXkc
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0NTU4OTYxLCJleHAiOjE3NzQ1NjI1NjF9.cOjmynS1Eg_sonfIBfNpsGhyWEBP1nVy-MDLf9axMVI
   body:
     type: json
     data: |-
       {
-        "name": "Main Branch 2",
-        "address": "Colombo 10",
-        "phone": "0777234567",
+        "name": "Branch 02",
+        "address": "456 Second Street, Kandy",
+        "phone": "0812345678",
         "timezone": "Asia/Colombo",
         "isActive": true
       }
