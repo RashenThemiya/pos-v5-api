@@ -1,0 +1,17 @@
+info:
+  name: http://localhost:8080/api/brands/1
+  type: http
+  seq: 44
+
+http:
+  method: DELETE
+  url: http://localhost:8080/api/brands/1
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0MzgxNDkwLCJleHAiOjE3NzQzODUwOTB9.zcA6UDQYsa6xG4ZnefMqDpONK7zxm3vzaZ3l4M2hQxY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

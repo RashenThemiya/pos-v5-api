@@ -1,0 +1,41 @@
+info:
+  name: http://localhost:8080/api/stock/transfers
+  type: http
+  seq: 65
+
+http:
+  method: POST
+  url: http://localhost:8080/api/stock/transfers
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0NTU4OTYxLCJleHAiOjE3NzQ1NjI1NjF9.cOjmynS1Eg_sonfIBfNpsGhyWEBP1nVy-MDLf9axMVI
+  body:
+    type: json
+    data: |-
+      {
+        "fromBranchId": 1,
+        "toBranchId": 2,
+        "createdBy": 1,
+        "note": "Monthly stock transfer to Branch 02",
+        "items": [
+          {
+            "itemId": 1,
+            "quantity": 200
+          },
+          {
+            "itemId": 3,
+            "quantity": 10
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Transfer Stock Between Branches

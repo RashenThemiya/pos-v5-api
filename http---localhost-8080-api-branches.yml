@@ -15,9 +15,9 @@ http:
     type: json
     data: |-
       {
-        "name": "Main Branch 2",
-        "address": "Colombo 10",
-        "phone": "0777234567",
+        "name": "Branch 02",
+        "address": "456 Second Street, Kandy",
+        "phone": "0812345678",
         "timezone": "Asia/Colombo",
         "isActive": true
       }

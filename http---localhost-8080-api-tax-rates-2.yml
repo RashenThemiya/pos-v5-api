@@ -1,0 +1,31 @@
+info:
+  name: http://localhost:8080/api/tax-rates/2
+  type: http
+  seq: 54
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/tax-rates/1
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0Mzg1MzAxLCJleHAiOjE3NzQzODg5MDF9.x-hIXuVeE8sctY0mKFIGJ2RH3K4ALWxbQM6lJ-3-hN4
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "name": "VAT",
+        "ratePercent": 19.00,
+        "isActive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Update tax rates

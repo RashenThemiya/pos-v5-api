@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/items/branch/1/sku/BEV-001
   type: http
-  seq: 40
+  seq: 39
 
 http:
   method: GET

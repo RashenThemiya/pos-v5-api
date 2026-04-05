@@ -1,16 +1,16 @@
 info:
-  name: http://localhost:8080/api/items/1-1 (1)
+  name: http://localhost:8080/api/brands/1/toggle-active
   type: http
-  seq: 40
+  seq: 49
 
 http:
-  method: PUT
-  url: http://localhost:8080/api/items/1
+  method: PATCH
+  url: http://localhost:8080/api/brands/2/toggle-active
   headers:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE4NzAzLCJleHAiOjE3NzM1MjIzMDN9.uFXI5rgUxWacinfhgukUmJAGcLzi7Y4i8u3IVSUBEwc
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0MzgxNDkwLCJleHAiOjE3NzQzODUwOTB9.zcA6UDQYsa6xG4ZnefMqDpONK7zxm3vzaZ3l4M2hQxY
   body:
     type: json
     data: |-
@@ -30,4 +30,4 @@ settings:
   followRedirects: true
   maxRedirects: 5
 
-docs: Update item
+docs: Change active state of Brand

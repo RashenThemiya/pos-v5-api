@@ -1,0 +1,25 @@
+info:
+  name: http://localhost:8080/api/stock/branch/1/item/1
+  type: http
+  seq: 61
+
+http:
+  method: GET
+  url: http://localhost:8080/api/stock/branch/1/item/1
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0ODcwMzg2LCJleHAiOjE3NzQ4NzM5ODZ9.nFpRI4VVVqagjjxUMu3X-ShvcMyIHk_IIjfFey0L-U8
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: " Get All Stock for a specific item in the branch. (Current live stock right now)"

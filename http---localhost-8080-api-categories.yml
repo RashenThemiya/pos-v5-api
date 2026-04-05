@@ -10,14 +10,13 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE1MDUyLCJleHAiOjE3NzM1MTg2NTJ9.1E7pprPREccQfjlDRuXeSJ8jBn5v0uVfqctxTMs5p4M
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE4NzAzLCJleHAiOjE3NzM1MjIzMDN9.uFXI5rgUxWacinfhgukUmJAGcLzi7Y4i8u3IVSUBEwc
   body:
     type: json
     data: |-
       {
         "branchId": 1,
-        "name": "Soft Drinks",
-        "parentId": 1,
+        "name": "Food",
         "isActive": true
       }
   auth: inherit

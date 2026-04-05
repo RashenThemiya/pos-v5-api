@@ -1,0 +1,72 @@
+info:
+  name: http://localhost:8080/api/stock/adjust
+  type: http
+  seq: 62
+
+http:
+  method: POST
+  url: http://localhost:8080/api/stock/adjust
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0NTU4OTYxLCJleHAiOjE3NzQ1NjI1NjF9.cOjmynS1Eg_sonfIBfNpsGhyWEBP1nVy-MDLf9axMVI
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "itemId": 1,
+        "quantity": 3,
+        "movementType": "EXPIRED",
+        "note": "Expired items removed",
+        "createdBy": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  Add Stock or manual remove stock.
+
+  You can give movement types as below
+  {
+    "branchId": 1,
+    "itemId": 2,
+    "quantity": 50,
+    "movementType": "ADJUSTMENT_IN",
+    "note": "Initial stock entry for item 2",
+    "createdBy": 1
+  }
+
+
+  {
+    "branchId": 1,
+    "itemId": 1,
+    "quantity": 10,
+    "movementType": "ADJUSTMENT_OUT",
+    "note": "Manual stock removal",
+    "createdBy": 1
+  }
+
+  {
+    "branchId": 1,
+    "itemId": 1,
+    "quantity": 5,
+    "movementType": "DAMAGE",
+    "note": "Damaged during storage",
+    "createdBy": 1
+  }
+
+  {
+    "branchId": 1,
+    "itemId": 1,
+    "quantity": 3,
+    "movementType": "EXPIRED",
+    "note": "Expired items removed",
+    "createdBy": 1
+  }
