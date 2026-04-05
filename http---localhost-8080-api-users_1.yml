@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8080/api/users
+  url: http://139.59.13.108:8080/api/users
   headers:
     - name: Authorization
       value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE1MDUyLCJleHAiOjE3NzM1MTg2NTJ9.1E7pprPREccQfjlDRuXeSJ8jBn5v0uVfqctxTMs5p4M

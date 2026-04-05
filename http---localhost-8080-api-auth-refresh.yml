@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/api/auth/refresh
+  url: http://139.59.13.108:8080/api/auth/refresh
   headers:
     - name: Content-Type
       value: application/json
