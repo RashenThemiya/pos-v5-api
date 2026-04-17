@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/items
   type: http
-  seq: 34
+  seq: 33
 
 http:
   method: POST
@@ -11,6 +11,7 @@ http:
       value: Bearer YOUR_JWT_TOKEN
     - name: Content-Type
       value: application/json
+<<<<<<< HEAD
   body:
     type: json
     data: "{\r
@@ -50,6 +51,22 @@ http:
       \  \"autoGenerateBarcode\": false\r
 
       }"
+=======
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0NTU4OTYxLCJleHAiOjE3NzQ1NjI1NjF9.cOjmynS1Eg_sonfIBfNpsGhyWEBP1nVy-MDLf9axMVI
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "sku": "BEV-003",
+        "name": "Pepsi 330ml new",
+        "categoryId": 1,
+        "isWeighed": false,
+        "isActive": true,
+        "brandId":2
+      }
+>>>>>>> 23b641a9e812a1f25115e4358960d0558331d1cc
   auth: inherit
 
 settings:

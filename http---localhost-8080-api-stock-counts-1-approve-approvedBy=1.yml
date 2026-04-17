@@ -1,0 +1,29 @@
+info:
+  name: http://localhost:8080/api/stock/counts/1/approve?approvedBy=1
+  type: http
+  seq: 71
+
+http:
+  method: PATCH
+  url: http://localhost:8080/api/stock/counts/2/approve?approvedBy=1
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0ODcwMzg2LCJleHAiOjE3NzQ4NzM5ODZ9.nFpRI4VVVqagjjxUMu3X-ShvcMyIHk_IIjfFey0L-U8
+  params:
+    - name: approvedBy
+      value: "1"
+      type: query
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Approve Stock Count

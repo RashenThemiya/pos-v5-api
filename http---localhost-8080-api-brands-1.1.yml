@@ -1,0 +1,25 @@
+info:
+  name: http://localhost:8080/api/brands/1.1
+  type: http
+  seq: 47
+
+http:
+  method: GET
+  url: http://localhost:8080/api/brands/2
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0MzgxNDkwLCJleHAiOjE3NzQzODUwOTB9.zcA6UDQYsa6xG4ZnefMqDpONK7zxm3vzaZ3l4M2hQxY
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: " Get Brands by ID"

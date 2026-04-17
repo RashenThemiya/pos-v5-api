@@ -1,7 +1,11 @@
 info:
   name: http://localhost:8080/api/items/1-1 (1)
   type: http
+<<<<<<< HEAD
   seq: 44
+=======
+  seq: 40
+>>>>>>> 23b641a9e812a1f25115e4358960d0558331d1cc
 
 http:
   method: PUT

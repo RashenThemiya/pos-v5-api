@@ -1,0 +1,31 @@
+info:
+  name: http://localhost:8080/api/tax-rates
+  type: http
+  seq: 50
+
+http:
+  method: POST
+  url: http://localhost:8080/api/tax-rates
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0MzgxNDkwLCJleHAiOjE3NzQzODUwOTB9.zcA6UDQYsa6xG4ZnefMqDpONK7zxm3vzaZ3l4M2hQxY
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "name": "Zero Rated",
+        "ratePercent": 0.00,
+        "isActive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Create new taxes
