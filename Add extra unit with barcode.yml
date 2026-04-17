@@ -1,0 +1,39 @@
+info:
+  name: Add extra unit with barcode
+  type: http
+  seq: 51
+
+http:
+  method: POST
+  url: http://localhost:8080/api/items/1/units?autoGenerateBarcode=false
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: autoGenerateBarcode
+      value: "false"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \  \"unitName\": \"BOX\",\r
+
+      \  \"multiplierToBase\": 12,\r
+
+      \  \"barcode\": \"8901030865799\",\r
+
+      \  \"defaultSellingPrice\": 7200.00,\r
+
+      \  \"isActive\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

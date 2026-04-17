@@ -1,11 +1,11 @@
 info:
-  name: http://localhost:8080/api/items/1-1 (1)
+  name: http://localhost:8080/api/items copy (1)
   type: http
-  seq: 44
+  seq: 36
 
 http:
-  method: PUT
-  url: http://localhost:8080/api/items/1
+  method: POST
+  url: http://localhost:8080/api/items
   headers:
     - name: Authorization
       value: Bearer YOUR_JWT_TOKEN
@@ -17,29 +17,33 @@ http:
 
       \  \"branchId\": 1,\r
 
-      \  \"sku\": \"SHAMPOO-001\",\r
+      \  \"sku\": \"APPLE-001\",\r
 
-      \  \"name\": \"Clinic Plus Shampoo 180ml Updated\",\r
+      \  \"name\": \"Apple\",\r
 
       \  \"image\": null,\r
 
-      \  \"categoryId\": 2,\r
+      \  \"categoryId\": 5,\r
 
-      \  \"brandId\": 1,\r
+      \  \"brandId\": null,\r
 
-      \  \"isWeighed\": false,\r
+      \  \"isWeighed\": true,\r
+
+      \  \"scaleBarcodePrefix\": \"21\",\r
 
       \  \"isActive\": true,\r
 
+      \  \"scaleItemCode\": \"00123\",\r
+
       \  \"baseUnit\": {\r
 
-      \    \"unitName\": \"BOTTLE\",\r
+      \    \"unitName\": \"KG\",\r
 
       \    \"multiplierToBase\": 1,\r
 
-      \    \"barcode\": \"8901030865703\",\r
+      \    \"barcode\": null,\r
 
-      \    \"defaultSellingPrice\": 700.00,\r
+      \    \"defaultSellingPrice\": 800.00,\r
 
       \    \"isBaseUnit\": true,\r
 
@@ -58,4 +62,4 @@ settings:
   followRedirects: true
   maxRedirects: 5
 
-docs: Update item
+docs: Create weighed item

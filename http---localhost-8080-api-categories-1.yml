@@ -10,7 +10,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE1MDUyLCJleHAiOjE3NzM1MTg2NTJ9.1E7pprPREccQfjlDRuXeSJ8jBn5v0uVfqctxTMs5p4M
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc2NDM2NDg5LCJleHAiOjE3NzY0NDAwODl9.DUVzJhi7XnP5z54mTP23Fl_LUL7nnPsh5BV0GbdYDf0
   body:
     type: json
     data: ""

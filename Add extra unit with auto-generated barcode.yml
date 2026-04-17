@@ -1,0 +1,39 @@
+info:
+  name: Add extra unit with auto-generated barcode
+  type: http
+  seq: 53
+
+http:
+  method: POST
+  url: http://localhost:8080/api/items/1/units?autoGenerateBarcode=true
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: autoGenerateBarcode
+      value: "true"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \  \"unitName\": \"PACK\",\r
+
+      \  \"multiplierToBase\": 0.5,\r
+
+      \  \"barcode\": null,\r
+
+      \  \"defaultSellingPrice\": 110.00,\r
+
+      \  \"isActive\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

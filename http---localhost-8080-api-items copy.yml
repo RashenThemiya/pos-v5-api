@@ -1,11 +1,11 @@
 info:
-  name: http://localhost:8080/api/items/1-1 (1)
+  name: http://localhost:8080/api/items copy
   type: http
-  seq: 44
+  seq: 35
 
 http:
-  method: PUT
-  url: http://localhost:8080/api/items/1
+  method: POST
+  url: http://localhost:8080/api/items
   headers:
     - name: Authorization
       value: Bearer YOUR_JWT_TOKEN
@@ -17,15 +17,15 @@ http:
 
       \  \"branchId\": 1,\r
 
-      \  \"sku\": \"SHAMPOO-001\",\r
+      \  \"sku\": \"BAKERY-001\",\r
 
-      \  \"name\": \"Clinic Plus Shampoo 180ml Updated\",\r
+      \  \"name\": \"Bakery Bun Pack\",\r
 
       \  \"image\": null,\r
 
-      \  \"categoryId\": 2,\r
+      \  \"categoryId\": 3,\r
 
-      \  \"brandId\": 1,\r
+      \  \"brandId\": null,\r
 
       \  \"isWeighed\": false,\r
 
@@ -33,13 +33,13 @@ http:
 
       \  \"baseUnit\": {\r
 
-      \    \"unitName\": \"BOTTLE\",\r
+      \    \"unitName\": \"PACK\",\r
 
       \    \"multiplierToBase\": 1,\r
 
-      \    \"barcode\": \"8901030865703\",\r
+      \    \"barcode\": null,\r
 
-      \    \"defaultSellingPrice\": 700.00,\r
+      \    \"defaultSellingPrice\": 180.00,\r
 
       \    \"isBaseUnit\": true,\r
 
@@ -47,7 +47,7 @@ http:
 
       \  },\r
 
-      \  \"autoGenerateBarcode\": false\r
+      \  \"autoGenerateBarcode\": true\r
 
       }"
   auth: inherit
@@ -58,4 +58,4 @@ settings:
   followRedirects: true
   maxRedirects: 5
 
-docs: Update item
+docs: Create normal item without barcode and auto-generate
