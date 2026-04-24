@@ -1,0 +1,31 @@
+info:
+  name: http://localhost:8080/api/cash/counters
+  type: http
+  seq: 72
+
+http:
+  method: POST
+  url: http://localhost:8080/api/cash/counters
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MDUwNDc0LCJleHAiOjE3NzcwNTQwNzR9.t3Ecaem50BhmMXsUxxHA5UuamWOld90hLu1Zi_HG1Ao
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "name": "Counter 01",
+        "location": "Main Floor",
+        "isActive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: create counter

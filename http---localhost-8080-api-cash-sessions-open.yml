@@ -1,0 +1,37 @@
+info:
+  name: http://localhost:8080/api/cash/sessions/open
+  type: http
+  seq: 76
+
+http:
+  method: POST
+  url: http://localhost:8080/api/cash/sessions/open
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MDUwNDc0LCJleHAiOjE3NzcwNTQwNzR9.t3Ecaem50BhmMXsUxxHA5UuamWOld90hLu1Zi_HG1Ao
+  body:
+    type: json
+    data: |-
+      {
+        "counterId": 2,
+        "openedBy": 1,
+        "openingCash": 5000.00,
+        "denominations": [
+          { "denomination": 1000.00, "qty": 2, "total": 2000.00 },
+          { "denomination": 500.00,  "qty": 4, "total": 2000.00 },
+          { "denomination": 100.00,  "qty": 5, "total": 500.00  },
+          { "denomination": 50.00,   "qty": 10, "total": 500.00 }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |
+  Cashier starts their shift. Records opening cash amount and denomination breakdown (how many 1000s, 500s etc. are in the drawer).
