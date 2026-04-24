@@ -5,7 +5,7 @@ info:
 
 http:
   method: PUT
-  url: http://localhost:8080/api/roles/1
+  url: http://139.59.13.108:8080/api/roles/1
   headers:
     - name: Authorization
       value: Bearer YOUR_TOKEN
