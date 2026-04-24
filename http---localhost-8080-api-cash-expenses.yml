@@ -1,0 +1,35 @@
+info:
+  name: http://localhost:8080/api/cash/expenses
+  type: http
+  seq: 83
+
+http:
+  method: POST
+  url: http://localhost:8080/api/cash/expenses
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MDU1MTcyLCJleHAiOjE3NzcwNTg3NzJ9.EfAMwD1imofTPrasBbU8P_XQTgYfmImJvNTQdiipAws
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "cashSessionId": 2,
+        "category": "Utilities",
+        "amount": 250.00,
+        "paymentMethod": "CASH",
+        "expenseDate": "2025-04-24T10:30:00",
+        "createdBy": 1,
+        "note": "Electricity bill"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Record a business expense paid during the session

@@ -1,0 +1,33 @@
+info:
+  name: http://localhost:8080/api/cash/withdrawals
+  type: http
+  seq: 86
+
+http:
+  method: POST
+  url: http://localhost:8080/api/cash/withdrawals
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MDU1MTcyLCJleHAiOjE3NzcwNTg3NzJ9.EfAMwD1imofTPrasBbU8P_XQTgYfmImJvNTQdiipAws
+  body:
+    type: json
+    data: |-
+      {
+        "cashSessionId": 2,
+        "amount": 500.00,
+        "reason": "Owner withdrawal",
+        "notes": "Cash taken by manager",
+        "withdrawalDate": "2025-04-24T14:00:00",
+        "userId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: " Record cash physically removed from the drawer mid-session"

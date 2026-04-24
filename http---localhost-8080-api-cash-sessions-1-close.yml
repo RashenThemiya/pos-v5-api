@@ -1,0 +1,36 @@
+info:
+  name: http://localhost:8080/api/cash/sessions/1/close
+  type: http
+  seq: 82
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/cash/sessions/1/close
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MDUwNDc0LCJleHAiOjE3NzcwNTQwNzR9.t3Ecaem50BhmMXsUxxHA5UuamWOld90hLu1Zi_HG1Ao
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "closedBy": 1,
+        "closingCash": 4750.00,
+        "note": "End of day closing",
+        "denominations": [
+          { "denomination": 1000.00, "qty": 2, "total": 2000.00 },
+          { "denomination": 500.00,  "qty": 3, "total": 1500.00 },
+          { "denomination": 100.00,  "qty": 5, "total": 500.00  },
+          { "denomination": 50.00,   "qty": 15, "total": 750.00 }
+        ]
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |
+  Cashier ends their shift. Records how much cash is physically in the drawer and the denomination breakdown. System calculates the difference between expected and actual cash.
