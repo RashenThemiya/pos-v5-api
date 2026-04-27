@@ -1,0 +1,45 @@
+info:
+  name: http://139.59.13.108:8080/api/suppliers/purchase-returns
+  type: http
+  seq: 86
+
+http:
+  method: POST
+  url: http://139.59.13.108:8080/api/suppliers/purchase-returns
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MTQ2NDE4LCJleHAiOjE3NzcxNTAwMTh9.hSvk7fKY64K6rz5TI4oACxKegZQVfKZxgZxqxSOCups
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |
+      {
+        "branchId": 1,
+        "supplierId": 1,
+        "supplyId": 1,
+        "refundMethod": "BALANCE_ADJUSTMENT",
+        "reason": "Damaged items",
+        "processedBy": 1,
+        "status": "COMPLETED",
+        "items": [
+          {
+            "itemId": 1,
+            "unitId": 1,
+            "internalBatchBarcode": "BT-1-1-20260425201650-1DDDB98E",
+            "returnStockType": "DAMAGED",
+            "quantity": 1,
+            "unitCost": 500,
+            "lineTotal": 1000
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Create Purchase Return

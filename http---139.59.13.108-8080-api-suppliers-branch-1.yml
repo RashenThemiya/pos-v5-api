@@ -1,0 +1,25 @@
+info:
+  name: " http://139.59.13.108:8080/api/suppliers/branch/1"
+  type: http
+  seq: 73
+
+http:
+  method: GET
+  url: http://139.59.13.108:8080/api/suppliers/branch/1
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MjA4MzYzLCJleHAiOjE3NzcyMTE5NjN9.v8IYpBNGILyt88oXjExfuoMloPkTqr00Vd6SAh1keJY
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get Suppliers using branch ID

@@ -1,0 +1,49 @@
+info:
+  name: http://139.59.13.108:8080/api/supplies
+  type: http
+  seq: 78
+
+http:
+  method: POST
+  url: http://139.59.13.108:8080/api/suppliers/supplies
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MTQ1MzUyLCJleHAiOjE3NzcxNDg5NTJ9.aDESMRLJijeUphHn_1v3h-XnwASxh26cDbiTCq0touA
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |
+      {
+        "branchId": 1,
+        "supplierId": 1,
+        "poId": 1,
+        "invoiceNo": "INV-001",
+        "paidAmount": 0,
+        "paymentMethod": "CREDIT",
+        "status": "COMPLETED",
+        "receivedBy": 1,
+        "products": [
+          {
+            "itemId": 1,
+            "unitId": 1,
+            "batchNo": "BATCH-001",
+            "supplierBatchBarcode": "SUP-BATCH-001",
+            "costPrice": 500,
+            "sellingPrice": 650,
+            "quantityReceived": 10,
+            "qtyDamaged": 1,
+            "qtyExpired": 0,
+            "expiryDate": "2026-12-31"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Create GRN

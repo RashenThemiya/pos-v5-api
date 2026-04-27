@@ -1,0 +1,25 @@
+info:
+  name: http://139.59.13.108:8080/api/supplies/supplies/payment/branch/1 /suplier/1 copy
+  type: http
+  seq: 84
+
+http:
+  method: GET
+  url: http://139.59.13.108:8080/api/suppliers/payments/supply/2
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MTQ2NDE4LCJleHAiOjE3NzcxNTAwMTh9.hSvk7fKY64K6rz5TI4oACxKegZQVfKZxgZxqxSOCups
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get Payments by GRN

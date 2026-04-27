@@ -1,11 +1,11 @@
 info:
-  name: http://localhost:8080/api/auth/change-password
+  name: http://localhost:8080/api/suppliers/items
   type: http
-  seq: 3
+  seq: 74
 
 http:
   method: POST
-  url: http://139.59.13.108:8080/api/auth/change-password
+  url: http://139.59.13.108:8080/api/suppliers/items
   headers:
     - name: Authorization
       value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MTQxMDA1LCJleHAiOjE3NzcxNDQ2MDV9.09lldDjyewpO5VOqAUhXfeG-65Je46E2FtKMnb7fd5M
@@ -13,14 +13,24 @@ http:
       value: application/json
   body:
     type: json
-    data: |-
+    data: |
+      
       {
-        "currentPassword": "superadmin456",
-        "newPassword": "superadmin456"
+        "branchId": 1,
+        "supplierId": 1,
+        "itemId": 1,
+        "unitId": 1,
+        "defaultCostPrice": 500,
+        "lastPurchaseCost": 500,
+        "isPreferred": true,
+        "isActive": true
       }
+  auth: inherit
 
 settings:
   encodeUrl: true
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+
+docs: Add Supplier Item

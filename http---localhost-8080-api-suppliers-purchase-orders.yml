@@ -1,0 +1,44 @@
+info:
+  name: http://localhost:8080/api/suppliers/purchase-orders
+  type: http
+  seq: 76
+
+http:
+  method: POST
+  url: http://139.59.13.108:8080/api/suppliers/purchase-orders
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MTQxMDA1LCJleHAiOjE3NzcxNDQ2MDV9.09lldDjyewpO5VOqAUhXfeG-65Je46E2FtKMnb7fd5M
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |
+      
+
+      {
+        "branchId": 1,
+        "supplierId": 1,
+        "poNo": "PO-001",
+        "status": "COMPLETED",
+        "expectedDate": "2026-05-01",
+        "createdBy": 1,
+        "note": "Monthly stock",
+        "items": [
+          {
+            "itemId": 1,
+            "unitId": 1,
+            "orderedQty": 10,
+            "unitCostEst": 500
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Create Purchase Order "
