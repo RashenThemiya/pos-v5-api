@@ -1,0 +1,31 @@
+info:
+  name: http://localhost:8080/api/promotions/1/items
+  type: http
+  seq: 95
+
+http:
+  method: POST
+  url: http://localhost:8080/api/promotions/2/items
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3Njk1NDk3LCJleHAiOjE3Nzc2OTkwOTd9.4CFREHttoYU8VJbAIfb_1p6WTp1Ul3BLCm7Xf-AQBWM
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "itemId": 5,
+        "unitId": 2,
+        "maxQty": 10
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: " Create a new promotion"

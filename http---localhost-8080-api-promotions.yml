@@ -1,0 +1,41 @@
+info:
+  name: http://localhost:8080/api/promotions
+  type: http
+  seq: 88
+
+http:
+  method: POST
+  url: http://localhost:8080/api/promotions
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3Njk1NDk3LCJleHAiOjE3Nzc2OTkwOTd9.4CFREHttoYU8VJbAIfb_1p6WTp1Ul3BLCm7Xf-AQBWM
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "name": "200 Off Everything",
+        "promoCode": "SAVE10",
+        "type": "ITEM_FIXED",
+        "value": 200,
+        "minBillTotal": 1500,
+        "startAt": "2025-01-01T00:00:00",
+        "endAt": "2025-12-31T23:59:59",
+        "priority": 1,
+        "maxUsesTotal": 100,
+        "maxUsesPerCustomer": 2,
+        "isStackable": false,
+        "isActive": true,
+        "createdBy": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: " Create a new promotion\n "

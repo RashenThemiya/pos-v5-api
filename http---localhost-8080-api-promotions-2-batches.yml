@@ -1,0 +1,25 @@
+info:
+  name: http://localhost:8080/api/promotions/2/batches
+  type: http
+  seq: 99
+
+http:
+  method: GET
+  url: http://localhost:8080/api/promotions/1/batches
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzUxMTMzLCJleHAiOjE3NzczNTQ3MzN9.Dh-cn-oYmcjxOPgejXdyeUkbFiNe0BWTCciuuU1dI4I
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: See which batch barcodes are linked to this promotion.

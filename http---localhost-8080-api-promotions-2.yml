@@ -1,0 +1,41 @@
+info:
+  name: http://localhost:8080/api/promotions/2
+  type: http
+  seq: 89
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/promotions/1
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzQ3NDgyLCJleHAiOjE3NzczNTEwODJ9.EXqWQmtRBI3SS1iF-n-wAgFLMZK-ynQaO4_tPHGQc18
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "name": "15% Off Everything",
+        "promoCode": "SAVE15",
+        "type": "PERCENTAGE",
+        "value": 15,
+        "minBillTotal": 1000,
+        "startAt": "2026-01-01T00:00:00",
+        "endAt": "2026-12-31T23:59:59",
+        "priority": 1,
+        "maxUsesTotal": 50,
+        "maxUsesPerCustomer": 1,
+        "isStackable": false,
+        "isActive": true,
+        "createdBy": 1
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |
+  Update an existing promotion

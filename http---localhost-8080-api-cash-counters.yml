@@ -16,7 +16,7 @@ http:
     data: |-
       {
         "branchId": 1,
-        "name": "Counter 01",
+        "name": "Counter 02",
         "location": "Main Floor",
         "isActive": true
       }

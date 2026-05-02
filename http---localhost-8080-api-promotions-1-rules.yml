@@ -1,0 +1,36 @@
+info:
+  name: http://localhost:8080/api/promotions/1/rules
+  type: http
+  seq: 101
+
+http:
+  method: POST
+  url: http://localhost:8080/api/promotions/1/rules
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzUxMTMzLCJleHAiOjE3NzczNTQ3MzN9.Dh-cn-oYmcjxOPgejXdyeUkbFiNe0BWTCciuuU1dI4I
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "buyItemId": 3,
+        "buyQty": 2,
+        "getItemId": 4,
+        "getQty": 1,
+        "getDiscountPercent": 100
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |2-
+   Define the buy-get rule. Example below: buy 2 of item 3, get 1 of item 4 completely free (100% off).
+   
+   If you want 50% off instead of fully free, set getDiscountPercent to 50.

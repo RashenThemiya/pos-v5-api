@@ -10,7 +10,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MDUwNDc0LCJleHAiOjE3NzcwNTQwNzR9.t3Ecaem50BhmMXsUxxHA5UuamWOld90hLu1Zi_HG1Ao
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MDU0MTM1LCJleHAiOjE3NzcwNTc3MzV9.mLq55fuJNeLX9xeo6M3feRpP28N5dlFHa3wV972CGJE
   body:
     type: json
     data: ""
@@ -22,4 +22,4 @@ settings:
   followRedirects: true
   maxRedirects: 5
 
-docs: Get all counters for a branch
+docs: " Get a financial breakdown of a session — total cash sales, card sales, expenses, withdrawals, supplier payments and expected vs actual cash. Used at end of shift before closing."

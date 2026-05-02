@@ -1,0 +1,19 @@
+info:
+  name: http://localhost:8080/api/promotions/1/items/5
+  type: http
+  seq: 97
+
+http:
+  method: DELETE
+  url: http://localhost:8080/api/promotions/1/items/5
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzQ3NDgyLCJleHAiOjE3NzczNTEwODJ9.EXqWQmtRBI3SS1iF-n-wAgFLMZK-ynQaO4_tPHGQc18
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Unlink an item from the promotion (soft delete — sets isActive false). No body needed.
