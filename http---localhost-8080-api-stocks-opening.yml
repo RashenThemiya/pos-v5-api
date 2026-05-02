@@ -1,0 +1,43 @@
+info:
+  name: http://localhost:8080/api/stocks/opening
+  type: http
+  seq: 97
+
+http:
+  method: POST
+  url: http://139.59.13.108:8080/api/stocks/opening
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3NTM3MzUwLCJleHAiOjE3Nzc1NDA5NTB9.wGUfpmfgNmif-90xYhLFLLp39Ez-MI92JuPJ9Aaqsmo
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |
+      
+      {
+        "branchId": 1,
+        "createdBy": 99,
+        "items": [
+          {
+            "itemId": 10,
+            "unitId": 1,
+            "quantity": 100,
+            "batchNo": "BATCH-002",
+            "supplierBatchBarcode": "SUP-123",
+            "expiryDate": "2027-01-01",
+            "costPrice": 50,
+            "sellingPrice": 70,
+            "note": "Initial stock"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Creates opening stock, generates batches, and logs stock movement (OPENING). "

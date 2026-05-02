@@ -5,12 +5,12 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8080/api/stock/branch/1
+  url: http://139.59.13.108:8080/api/stock/branch/1
   headers:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0ODcwMzg2LCJleHAiOjE3NzQ4NzM5ODZ9.nFpRI4VVVqagjjxUMu3X-ShvcMyIHk_IIjfFey0L-U8
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3NTQyOTAwLCJleHAiOjE3Nzc1NDY1MDB9.jJ0Ib72kMyWFRU2EnsPb-O86OYpEjyPBh3URfgWG3NQ
   body:
     type: json
     data: ""

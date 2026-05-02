@@ -8,7 +8,7 @@ http:
   url: http://139.59.13.108:8080/api/suppliers/purchase-orders
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MTQxMDA1LCJleHAiOjE3NzcxNDQ2MDV9.09lldDjyewpO5VOqAUhXfeG-65Je46E2FtKMnb7fd5M
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzE1ODM2LCJleHAiOjE3NzczMTk0MzZ9.NfvWBdVPNRbVn_6ZICdidxy8urgZkWs_6X6T-WlMfoc
     - name: Content-Type
       value: application/json
   body:
@@ -18,8 +18,8 @@ http:
 
       {
         "branchId": 1,
-        "supplierId": 1,
-        "poNo": "PO-001",
+        "supplierId": 2,
+        "poNo": "PO-000121",
         "status": "COMPLETED",
         "expectedDate": "2026-05-01",
         "createdBy": 1,

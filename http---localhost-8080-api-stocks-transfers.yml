@@ -1,0 +1,38 @@
+info:
+  name: http://localhost:8080/api/stocks/transfers
+  type: http
+  seq: 98
+
+http:
+  method: POST
+  url: http://139.59.13.108:8080/api/stocks/transfers
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3NTQyOTAwLCJleHAiOjE3Nzc1NDY1MDB9.jJ0Ib72kMyWFRU2EnsPb-O86OYpEjyPBh3URfgWG3NQ
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |
+      {
+        "fromBranchId": 1,
+        "toBranchId": 2,
+        "createdBy": 99,
+        "note": "Transfer to branch 2",
+        "items": [
+          {
+            "itemId": 10,
+            "internalBatchBarcode": "BT-1-10-XXXX",
+            "quantity": 20
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Transfers stock between branches. Updates source stock, creates destination batch, and logs movements (TRANSFER_OUT, TRANSFER_IN). "

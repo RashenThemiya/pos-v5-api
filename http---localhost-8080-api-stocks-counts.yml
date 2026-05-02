@@ -1,0 +1,37 @@
+info:
+  name: http://localhost:8080/api/stocks/counts
+  type: http
+  seq: 100
+
+http:
+  method: POST
+  url: http://139.59.13.108:8080/api/stocks/counts
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3NDkyMzM4LCJleHAiOjE3Nzc0OTU5Mzh9.__RfxX7EEFDKrKg4zLHl-K21s0Y5b9poeZxjbY0YcN4
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |
+      {
+        "branchId": 1,
+        "createdBy": 99,
+        "note": "Monthly stock count",
+        "items": [
+          {
+            "itemId": 10,
+            "countedQty": 95,
+            "note": "Damaged items removed"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Performs physical stock count and calculates difference from system stock.

@@ -1,0 +1,25 @@
+info:
+  name: http://localhost:8080/api/stocks/counts/{stockCountId}
+  type: http
+  seq: 101
+
+http:
+  method: GET
+  url: http://139.59.13.108:8080/api/stocks/counts/1
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3NDkyMzM4LCJleHAiOjE3Nzc0OTU5Mzh9.__RfxX7EEFDKrKg4zLHl-K21s0Y5b9poeZxjbY0YcN4
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Returns details of a specific stock count with differences.
