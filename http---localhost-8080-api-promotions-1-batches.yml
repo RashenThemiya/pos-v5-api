@@ -1,0 +1,30 @@
+info:
+  name: http://localhost:8080/api/promotions/1/batches
+  type: http
+  seq: 98
+
+http:
+  method: POST
+  url: http://localhost:8080/api/promotions/1/batches
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzQ3NDgyLCJleHAiOjE3NzczNTEwODJ9.EXqWQmtRBI3SS1iF-n-wAgFLMZK-ynQaO4_tPHGQc18
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "barcode": "BT-1-5-1234567890-abcd",
+        "maxQty": 50
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: " Link a specific stock batch barcode to the promotion. Only items sold from that batch get the discount. Useful for expiring stock clearance."

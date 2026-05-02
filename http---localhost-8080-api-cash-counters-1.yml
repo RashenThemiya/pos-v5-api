@@ -8,15 +8,16 @@ http:
   url: http://localhost:8080/api/cash/counters/1
   headers:
     - name: Authorization
-      value: Bearer YOUR_TOKEN
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MDUwNDc0LCJleHAiOjE3NzcwNTQwNzR9.t3Ecaem50BhmMXsUxxHA5UuamWOld90hLu1Zi_HG1Ao
     - name: Content-Type
       value: application/json
   body:
     type: json
     data: |-
       {
-        "name": "BRANCH_MANAGER",
-        "description": "Updated role",
+        "branchId": 1,
+        "name": "Counter 01 Updated",
+        "location": "Main Floor",
         "isActive": true
       }
 

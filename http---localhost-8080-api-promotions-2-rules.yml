@@ -1,0 +1,25 @@
+info:
+  name: http://localhost:8080/api/promotions/2/rules
+  type: http
+  seq: 102
+
+http:
+  method: GET
+  url: http://localhost:8080/api/promotions/1/rules
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzUxMTMzLCJleHAiOjE3NzczNTQ3MzN9.Dh-cn-oYmcjxOPgejXdyeUkbFiNe0BWTCciuuU1dI4I
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: " See all buy-x-get-y rules on this promotion."

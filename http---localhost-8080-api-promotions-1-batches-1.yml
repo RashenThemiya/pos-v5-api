@@ -1,0 +1,19 @@
+info:
+  name: http://localhost:8080/api/promotions/1/batches/1
+  type: http
+  seq: 100
+
+http:
+  method: DELETE
+  url: http://localhost:8080/api/promotions/1/batches/1
+  headers:
+    - name: Authorization
+      value: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzUxMTMzLCJleHAiOjE3NzczNTQ3MzN9.Dh-cn-oYmcjxOPgejXdyeUkbFiNe0BWTCciuuU1dI4I
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Remove a batch from the promotion. No body needed.

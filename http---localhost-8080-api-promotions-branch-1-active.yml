@@ -1,0 +1,25 @@
+info:
+  name: http://localhost:8080/api/promotions/branch/1/active
+  type: http
+  seq: 92
+
+http:
+  method: GET
+  url: http://localhost:8080/api/promotions/branch/1/active
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzQ3NDgyLCJleHAiOjE3NzczNTEwODJ9.EXqWQmtRBI3SS1iF-n-wAgFLMZK-ynQaO4_tPHGQc18
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get only currently active promotions within their valid date range. Used at checkout to know which promotions are running right now.
