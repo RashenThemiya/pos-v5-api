@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/categories/branch/1/active
   type: http
-  seq: 28
+  seq: 20
 
 http:
   method: GET

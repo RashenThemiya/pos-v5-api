@@ -1,22 +1,19 @@
 info:
-  name: http://localhost:8080/api/users/2/roles
+  name: change user role
   type: http
-  seq: 17
+  seq: 136
 
 http:
   method: POST
-  url: http://139.59.13.108:8080/api/users/2/roles
+  url: http://139.59.13.108:8080/api/users/1/roles
   headers:
     - name: Authorization
-      value: Bearer ACCESS_TOKEN
+      value: Bearer YOUR_TOKEN
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: |-
-      {
-        "roleId": 1
-      }
+    data: "{\r\n  \"roleId\": 2\r\n}"
 
 settings:
   encodeUrl: true

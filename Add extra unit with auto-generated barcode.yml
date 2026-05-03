@@ -1,7 +1,7 @@
 info:
   name: Add extra unit with auto-generated barcode
   type: http
-  seq: 53
+  seq: 44
 
 http:
   method: POST

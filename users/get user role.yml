@@ -1,15 +1,14 @@
 info:
-  name: get item by barcode
+  name: get user role
   type: http
-  seq: 29
+  seq: 136
 
 http:
   method: GET
-  url: http://localhost:8080/api/items/branch/1/barcode/8901030865703
+  url: http://139.59.13.108:8080/api/users/1/roles
   headers:
     - name: Authorization
-      value: Bearer YOUR_JWT_TOKEN
-  auth: inherit
+      value: Bearer YOUR_TOKEN
 
 settings:
   encodeUrl: true

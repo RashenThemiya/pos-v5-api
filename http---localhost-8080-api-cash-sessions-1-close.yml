@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/cash/sessions/1/close
   type: http
-  seq: 82
+  seq: 88
 
 http:
   method: PUT

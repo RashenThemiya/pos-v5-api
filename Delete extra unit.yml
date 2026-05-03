@@ -1,7 +1,7 @@
 info:
   name: Delete extra unit
   type: http
-  seq: 59
+  seq: 53
 
 http:
   method: DELETE

@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/stock/transfers
   type: http
-  seq: 65
+  seq: 60
 
 http:
   method: POST

@@ -1,7 +1,7 @@
 info:
   name: Get all units of item
   type: http
-  seq: 49
+  seq: 38
 
 http:
   method: GET

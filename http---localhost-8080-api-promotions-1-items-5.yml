@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/promotions/1/items/5
   type: http
-  seq: 97
+  seq: 117
 
 http:
   method: DELETE

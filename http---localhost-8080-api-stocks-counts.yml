@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/stocks/counts
   type: http
-  seq: 100
+  seq: 124
 
 http:
   method: POST

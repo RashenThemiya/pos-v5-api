@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/stock/adjust
   type: http
-  seq: 62
+  seq: 57
 
 http:
   method: POST

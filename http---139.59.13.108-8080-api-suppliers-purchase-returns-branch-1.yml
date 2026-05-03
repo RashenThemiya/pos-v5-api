@@ -1,7 +1,7 @@
 info:
   name: http://139.59.13.108:8080/api/suppliers/purchase-returns/branch/1
   type: http
-  seq: 87
+  seq: 97
 
 http:
   method: GET

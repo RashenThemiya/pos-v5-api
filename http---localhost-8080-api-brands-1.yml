@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/brands/1
   type: http
-  seq: 44
+  seq: 31
 
 http:
   method: DELETE

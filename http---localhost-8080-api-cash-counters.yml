@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/cash/counters
   type: http
-  seq: 72
+  seq: 67
 
 http:
   method: POST

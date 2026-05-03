@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/suppliers
   type: http
-  seq: 72
+  seq: 68
 
 http:
   method: POST

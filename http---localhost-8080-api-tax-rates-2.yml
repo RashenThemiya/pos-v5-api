@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/tax-rates/2
   type: http
-  seq: 54
+  seq: 46
 
 http:
   method: PUT

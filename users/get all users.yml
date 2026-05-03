@@ -1,5 +1,5 @@
 info:
-  name: http://localhost:8080/api/users_1
+  name: get all users
   type: http
   seq: 18
 
@@ -8,7 +8,7 @@ http:
   url: http://139.59.13.108:8080/api/users
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE1MDUyLCJleHAiOjE3NzM1MTg2NTJ9.1E7pprPREccQfjlDRuXeSJ8jBn5v0uVfqctxTMs5p4M
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3ODExODc5LCJleHAiOjE3Nzc4MTU0Nzl9.u7HM_PA7u-sFLC8r6djkbgnTUQkPbWqF7XP_bNs7QFc
 
 settings:
   encodeUrl: true

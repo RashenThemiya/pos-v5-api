@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/items/1/taxes (1)
   type: http
-  seq: 58
+  seq: 52
 
 http:
   method: GET

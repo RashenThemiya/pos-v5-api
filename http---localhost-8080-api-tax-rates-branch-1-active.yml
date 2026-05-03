@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/tax-rates/branch/1/active
   type: http
-  seq: 52
+  seq: 43
 
 http:
   method: GET

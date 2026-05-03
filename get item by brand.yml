@@ -1,7 +1,7 @@
 info:
   name: get item by brand
   type: http
-  seq: 42
+  seq: 28
 
 http:
   method: GET

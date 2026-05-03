@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/suppliers/items/branch/1/supplier/1
   type: http
-  seq: 75
+  seq: 74
 
 http:
   method: GET

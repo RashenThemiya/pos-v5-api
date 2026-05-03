@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/cash/counters/1
   type: http
-  seq: 73
+  seq: 70
 
 http:
   method: PUT

@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/tax-rates/2/toggle-active
   type: http
-  seq: 55
+  seq: 47
 
 http:
   method: PATCH

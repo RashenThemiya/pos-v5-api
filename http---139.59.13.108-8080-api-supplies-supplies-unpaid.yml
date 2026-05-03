@@ -1,7 +1,7 @@
 info:
   name: http://139.59.13.108:8080/api/supplies/supplies/unpaid
   type: http
-  seq: 80
+  seq: 83
 
 http:
   method: GET

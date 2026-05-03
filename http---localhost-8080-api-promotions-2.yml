@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/promotions/2
   type: http
-  seq: 89
+  seq: 102
 
 http:
   method: PUT

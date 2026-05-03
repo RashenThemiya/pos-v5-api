@@ -1,7 +1,7 @@
 info:
   name: http://139.59.13.108:8080/api/suppliers/payments/supply/2
   type: http
-  seq: 85
+  seq: 93
 
 http:
   method: GET

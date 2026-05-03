@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/cash/expenses
   type: http
-  seq: 83
+  seq: 90
 
 http:
   method: POST

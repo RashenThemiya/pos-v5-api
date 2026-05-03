@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/stocks/batches/branch/{branchId}
   type: http
-  seq: 93
+  seq: 110
 
 http:
   method: GET

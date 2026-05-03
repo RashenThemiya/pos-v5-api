@@ -1,7 +1,7 @@
 info:
   name: http://139.59.13.108:8080/api/suppliers/branch/1/supplier/1/ledger
   type: http
-  seq: 89
+  seq: 101
 
 http:
   method: GET

@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/roles/1/permissions/2
   type: http
-  seq: 15
+  seq: 14
 
 http:
   method: DELETE

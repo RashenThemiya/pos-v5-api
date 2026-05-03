@@ -1,14 +1,14 @@
 info:
-  name: http://localhost:8080/api/users/2/permissions
+  name: get user permtion
   type: http
-  seq: 14
+  seq: 136
 
 http:
   method: GET
-  url: http://139.59.13.108:8080/api/users/2/permissions
+  url: http://139.59.13.108:8080/api/users/1/permissions
   headers:
     - name: Authorization
-      value: Bearer ACCESS_TOKEN
+      value: Bearer YOUR_TOKEN
 
 settings:
   encodeUrl: true

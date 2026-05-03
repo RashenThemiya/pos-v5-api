@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/items copy
   type: http
-  seq: 35
+  seq: 25
 
 http:
   method: POST
@@ -13,43 +13,31 @@ http:
       value: application/json
   body:
     type: json
-    data: "{\r
+    data: |-
+      {
+        "branchId": 1,
+        "sku": "BAKERY-001",
+        "name": "Bakery Bun Pack",
+        "image": null,
+        "categoryId": 3,
+        "brandId": null,
+        "isWeighed": false,
+        "isActive": true,
 
-      \  \"branchId\": 1,\r
+        "minStock": 10,
+        "maxStock": 100,
 
-      \  \"sku\": \"BAKERY-001\",\r
+        "baseUnit": {
+          "unitName": "PACK",
+          "multiplierToBase": 1,
+          "barcode": null,
+          "defaultSellingPrice": 180.00,
+          "isBaseUnit": true,
+          "isActive": true
+        },
 
-      \  \"name\": \"Bakery Bun Pack\",\r
-
-      \  \"image\": null,\r
-
-      \  \"categoryId\": 3,\r
-
-      \  \"brandId\": null,\r
-
-      \  \"isWeighed\": false,\r
-
-      \  \"isActive\": true,\r
-
-      \  \"baseUnit\": {\r
-
-      \    \"unitName\": \"PACK\",\r
-
-      \    \"multiplierToBase\": 1,\r
-
-      \    \"barcode\": null,\r
-
-      \    \"defaultSellingPrice\": 180.00,\r
-
-      \    \"isBaseUnit\": true,\r
-
-      \    \"isActive\": true\r
-
-      \  },\r
-
-      \  \"autoGenerateBarcode\": true\r
-
-      }"
+        "autoGenerateBarcode": true
+      }
   auth: inherit
 
 settings:
