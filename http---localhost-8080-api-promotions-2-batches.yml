@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/promotions/2/batches
   type: http
-  seq: 121
+  seq: 124
 
 http:
   method: GET

@@ -1,7 +1,7 @@
 info:
   name: http://139.59.13.108:8080/api/supplies/supplies
   type: http
-  seq: 81
+  seq: 84
 
 http:
   method: GET

@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/stock/transfers/branch/1
   type: http
-  seq: 61
+  seq: 64
 
 http:
   method: GET

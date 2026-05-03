@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/promotions/1/activate
   type: http
-  seq: 109
+  seq: 112
 
 http:
   method: PATCH

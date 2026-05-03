@@ -1,7 +1,7 @@
 info:
   name: http://139.59.13.108:8080/api/suppliers/purchase-returns
   type: http
-  seq: 95
+  seq: 98
 
 http:
   method: POST

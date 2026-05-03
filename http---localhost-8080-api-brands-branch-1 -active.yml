@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/brands/branch/1 /active
   type: http
-  seq: 34
+  seq: 35
 
 http:
   method: GET

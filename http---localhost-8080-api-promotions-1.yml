@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/promotions/1
   type: http
-  seq: 103
+  seq: 106
 
 http:
   method: GET

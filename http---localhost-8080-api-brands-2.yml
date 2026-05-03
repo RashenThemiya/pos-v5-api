@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/brands/2
   type: http
-  seq: 37
+  seq: 40
 
 http:
   method: PUT

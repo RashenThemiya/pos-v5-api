@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/cash/sessions/counter/1
   type: http
-  seq: 82
+  seq: 85
 
 http:
   method: GET

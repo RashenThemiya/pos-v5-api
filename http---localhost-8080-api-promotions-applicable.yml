@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/promotions/applicable
   type: http
-  seq: 132
+  seq: 135
 
 http:
   method: POST

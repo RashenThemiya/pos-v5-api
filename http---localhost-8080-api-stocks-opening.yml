@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/stocks/opening
   type: http
-  seq: 118
+  seq: 121
 
 http:
   method: POST

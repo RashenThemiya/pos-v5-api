@@ -1,7 +1,7 @@
 info:
   name: " http://139.59.13.108:8080/api/suppliers/branch/1"
   type: http
-  seq: 69
+  seq: 72
 
 http:
   method: GET

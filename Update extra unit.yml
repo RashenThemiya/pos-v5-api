@@ -1,7 +1,7 @@
 info:
   name: Update extra unit
   type: http
-  seq: 48
+  seq: 51
 
 http:
   method: PUT

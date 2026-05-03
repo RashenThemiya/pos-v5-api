@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/cash/withdrawals
   type: http
-  seq: 96
+  seq: 99
 
 http:
   method: POST

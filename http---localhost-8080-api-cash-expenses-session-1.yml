@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/cash/expenses/session/1
   type: http
-  seq: 92
+  seq: 95
 
 http:
   method: GET

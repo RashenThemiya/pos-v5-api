@@ -1,7 +1,7 @@
 info:
   name: 18. Update extra unit with generated barcode
   type: http
-  seq: 50
+  seq: 53
 
 http:
   method: PUT

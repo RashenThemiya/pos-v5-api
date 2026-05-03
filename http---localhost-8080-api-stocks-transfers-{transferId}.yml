@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/stocks/transfers/{transferId}
   type: http
-  seq: 122
+  seq: 125
 
 http:
   method: GET

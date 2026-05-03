@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/stock/counts/1/approve?approvedBy=1
   type: http
-  seq: 66
+  seq: 69
 
 http:
   method: PATCH

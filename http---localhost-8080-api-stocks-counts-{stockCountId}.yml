@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/stocks/counts/{stockCountId}
   type: http
-  seq: 126
+  seq: 129
 
 http:
   method: GET
