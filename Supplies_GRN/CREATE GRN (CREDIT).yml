@@ -1,0 +1,59 @@
+info:
+  name: CREATE GRN (CREDIT)
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/api/suppliers/supplies
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"branchId\": 1,\r
+
+      \  \"supplierId\": 1,\r
+
+      \  \"poId\": 1,\r
+
+      \  \"invoiceNo\": \"INV-001\",\r
+
+      \  \"paidAmount\": 0,\r
+
+      \  \"paymentMethod\": \"CREDIT\",\r
+
+      \  \"status\": \"COMPLETED\",\r
+
+      \  \"receivedBy\": 1,\r
+
+      \  \"products\": [\r
+
+      \    {\r
+
+      \      \"itemId\": 1,\r
+
+      \      \"unitId\": 1,\r
+
+      \      \"costPrice\": 500,\r
+
+      \      \"sellingPrice\": 650,\r
+
+      \      \"quantityReceived\": 10\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

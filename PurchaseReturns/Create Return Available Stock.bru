@@ -1,0 +1,39 @@
+meta {
+  name: Create Return Available Stock
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/purchase-returns
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json {
+{
+  "branchId": 1,
+  "supplierId": 1,
+  "supplyId": 1,
+  "refundMethod": "BALANCE_ADJUSTMENT",
+  "reason": "Returned excess stock",
+  "processedBy": 1,
+  "status": "COMPLETED",
+  "items": [
+    {
+      "itemId": 1,
+      "unitId": 1,
+      "internalBatchBarcode": "BT-1-1-20260425104500-ABCD1234",
+      "returnStockType": "AVAILABLE",
+      "quantity": 2,
+      "unitCost": 500,
+      "lineTotal": 1000
+    }
+  ]
+}
+}

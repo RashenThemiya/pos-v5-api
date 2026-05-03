@@ -1,0 +1,61 @@
+info:
+  name: PURCHASE RETURN (AVAILABLE)
+  type: http
+  seq: 1
+
+http:
+  method: post
+  url: http://localhost:8080/api/suppliers/purchase-returns
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"branchId\": 1,\r
+
+      \  \"supplierId\": 1,\r
+
+      \  \"supplyId\": 1,\r
+
+      \  \"refundMethod\": \"BALANCE_ADJUSTMENT\",\r
+
+      \  \"reason\": \"Returned stock\",\r
+
+      \  \"processedBy\": 1,\r
+
+      \  \"status\": \"COMPLETED\",\r
+
+      \  \"items\": [\r
+
+      \    {\r
+
+      \      \"itemId\": 1,\r
+
+      \      \"unitId\": 1,\r
+
+      \      \"internalBatchBarcode\": \"BT-XXX\",\r
+
+      \      \"returnStockType\": \"AVAILABLE\",\r
+
+      \      \"quantity\": 2,\r
+
+      \      \"unitCost\": 500,\r
+
+      \      \"lineTotal\": 1000\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

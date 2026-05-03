@@ -1,0 +1,37 @@
+meta {
+  name: Create GRN Partial Payment
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/supplies
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json {
+{
+  "branchId": 1,
+  "supplierId": 1,
+  "invoiceNo": "INV-002",
+  "paidAmount": 2000,
+  "paymentMethod": "CASH",
+  "status": "COMPLETED",
+  "receivedBy": 1,
+  "products": [
+    {
+      "itemId": 1,
+      "unitId": 1,
+      "costPrice": 500,
+      "sellingPrice": 650,
+      "quantityReceived": 10
+    }
+  ]
+}
+}

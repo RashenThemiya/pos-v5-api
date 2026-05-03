@@ -1,0 +1,16 @@
+meta {
+  name: Get Returns by Supplier
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/purchase-returns/branch/1/supplier/1
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}

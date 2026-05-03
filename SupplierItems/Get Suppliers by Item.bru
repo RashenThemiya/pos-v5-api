@@ -1,0 +1,16 @@
+meta {
+  name: Get Suppliers by Item
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/items/branch/1/item/1
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}

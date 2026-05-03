@@ -1,0 +1,48 @@
+info:
+  name: Item without barcode, auto-generate, with image upload
+  type: http
+  seq: 34
+
+http:
+  method: POST
+  url: http://localhost:8080/api/items
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  body:
+    type: multipart-form
+    multipart-form:
+      - name: branchId
+        value: "1"
+      - name: sku
+        value: "BAKERY-001"
+      - name: name
+        value: "Bakery Bun Pack"
+      - name: categoryId
+        value: "3"
+      - name: isWeighed
+        value: "false"
+      - name: isActive
+        value: "true"
+      - name: autoGenerateBarcode
+        value: "true"
+      - name: baseUnitName
+        value: "PACK"
+      - name: baseUnitMultiplierToBase
+        value: "1"
+      - name: baseUnitDefaultSellingPrice
+        value: "180.00"
+      - name: baseUnitIsActive
+        value: "true"
+      - name: imageFile
+        file: true
+        src: C:/Users/Rashen/Pictures/bun.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Create normal item without barcode, auto-generate barcode, with image upload
