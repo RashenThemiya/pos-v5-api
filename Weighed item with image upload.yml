@@ -1,0 +1,24 @@
+info:
+  name: Weighed item with image upload
+  type: http
+  seq: 35
+
+http:
+  method: POST
+  url: http://localhost:8080/api/items
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+    - name: Content-Type
+      value: multipart/form-data
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Create weighed item

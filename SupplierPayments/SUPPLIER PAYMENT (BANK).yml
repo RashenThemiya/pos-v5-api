@@ -1,0 +1,41 @@
+info:
+  name: SUPPLIER PAYMENT (BANK)
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/api/suppliers/payments
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"branchId\": 1,\r
+
+      \  \"supplierId\": 1,\r
+
+      \  \"supplyId\": 1,\r
+
+      \  \"amount\": 2000,\r
+
+      \  \"paymentMethod\": \"BANK_TRANSFER\",\r
+
+      \  \"paidBy\": 1,\r
+
+      \  \"referenceNo\": \"TXN001\",\r
+
+      \  \"note\": \"Partial payment\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

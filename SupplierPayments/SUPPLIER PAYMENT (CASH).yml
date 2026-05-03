@@ -1,0 +1,43 @@
+info:
+  name: SUPPLIER PAYMENT (CASH)
+  type: http
+  seq: 2
+
+http:
+  method: post
+  url: http://localhost:8080/api/suppliers/payments
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"branchId\": 1,\r
+
+      \  \"supplierId\": 1,\r
+
+      \  \"supplyId\": 1,\r
+
+      \  \"amount\": 3000,\r
+
+      \  \"paymentMethod\": \"CASH\",\r
+
+      \  \"cashSessionId\": 1,\r
+
+      \  \"paidBy\": 1,\r
+
+      \  \"referenceNo\": \"CASH001\",\r
+
+      \  \"note\": \"Cash payment\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,29 @@
+meta {
+  name: Add Supplier Item
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/items
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json {
+{
+  "branchId": 1,
+  "supplierId": 1,
+  "itemId": 1,
+  "unitId": 1,
+  "defaultCostPrice": 500,
+  "lastPurchaseCost": 500,
+  "isPreferred": true,
+  "isActive": true
+}
+}

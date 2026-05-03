@@ -1,0 +1,44 @@
+meta {
+  name: Create GRN Credit
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/supplies
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+}
+
+body:json {
+{
+  "branchId": 1,
+  "supplierId": 1,
+  "poId": 1,
+  "invoiceNo": "INV-001",
+  "paidAmount": 0,
+  "paymentMethod": "CREDIT",
+  "status": "COMPLETED",
+  "receivedBy": 1,
+  "notes": "Goods received on credit",
+  "products": [
+    {
+      "itemId": 1,
+      "unitId": 1,
+      "batchNo": "BATCH-001",
+      "supplierBatchBarcode": "SUP-BATCH-001",
+      "costPrice": 500,
+      "sellingPrice": 650,
+      "quantityReceived": 10,
+      "qtyDamaged": 0,
+      "qtyExpired": 0,
+      "expiryDate": "2026-12-31"
+    }
+  ]
+}
+}
