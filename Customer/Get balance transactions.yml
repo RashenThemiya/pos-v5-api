@@ -1,0 +1,20 @@
+info:
+  name: Get balance transactions
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://localhost:8080/api/customers/1/balance-transactions
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3ODMzNjUwLCJleHAiOjE3Nzc4MzcyNTB9.jV8qMdDWouMQTTvCNXyjoYn7FhO4A8NZrIbfZmrX98s
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: http://localhost:8080/api/customers/{customer_id}/balance-transactions
