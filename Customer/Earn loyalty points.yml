@@ -1,0 +1,30 @@
+info:
+  name: Earn loyalty points
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:8080/api/customers/1/loyalty/earn
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3ODMzNjUwLCJleHAiOjE3Nzc4MzcyNTB9.jV8qMdDWouMQTTvCNXyjoYn7FhO4A8NZrIbfZmrX98s
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "points": 500.00,
+        "valueAmount": 500.00,
+        "reason": "Purchase reward"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: http://localhost:8080/api/customers/{customer_id}/loyalty/earn
