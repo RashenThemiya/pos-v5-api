@@ -1,0 +1,59 @@
+info:
+  name: http://localhost:8080/api/sales/orders/{order id}/payments
+  type: http
+  seq: 114
+
+http:
+  method: POST
+  url: http://localhost:8080/api/sales/orders/4/payments
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4MTAwMjQyLCJleHAiOjE3NzgxMDM4NDJ9.Vi6X99Hnzofl3GH4DL1jSE7vWHQX0wN1-6pfF_iAooE
+  body:
+    type: json
+    data: |-
+      {
+        "receivedBy": 1,
+        "payments": [
+          {
+            "paymentMethod": "CASH",
+            "amount": 1000.00,
+            "tenderedAmount": 1500.00,
+            "referenceNo": null,
+            "note": null
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  Process payment for an order. Supports split payment (cash + card). Automatically updates session summary.
+
+  split payment example 
+  {
+    "receivedBy": 1,
+    "payments": [
+      {
+        "paymentMethod": "CASH",
+        "amount": 500.00,
+        "tenderedAmount": 500.00,
+        "referenceNo": null,
+        "note": null
+      },
+      {
+        "paymentMethod": "CARD",
+        "amount": 750.00,
+        "tenderedAmount": null,
+        "referenceNo": "TXN-98765",
+        "note": null
+      }
+    ]
+  }
