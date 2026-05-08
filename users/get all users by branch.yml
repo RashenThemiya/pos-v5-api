@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8080/api/users/branch/1
+  url: http://139.59.13.108:8080/api/users/branch/1
   headers:
     - name: Authorization
-      value: Bearer YOUR_TOKEN
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3ODI1NjkxLCJleHAiOjE3Nzc4MjkyOTF9.3v9hCTHqgsAX1-jGAbMdFhcy_kk8tUT07uRkk5fo61c
 
 settings:
   encodeUrl: true
