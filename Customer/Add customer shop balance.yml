@@ -1,0 +1,29 @@
+info:
+  name: Add customer shop balance
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:8080/api/customers/1/balance/add
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3ODk1MDQ2LCJleHAiOjE3Nzc4OTg2NDZ9.U7Xj3BUTVY4bu7R63Gl2S-eKjIv-R9Q4h_mu0d-2sUY
+  body:
+    type: json
+    data: |
+      {
+        "amount": 2000.00,
+        "reason": "Initial balance load"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: http://localhost:8080/api/customers/{customer_id}/balance/add

@@ -5,27 +5,27 @@ info:
 
 http:
   method: PUT
-  url: http://localhost:8080/api/promotions/1
+  url: http://localhost:8080/api/promotions/2
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzQ3NDgyLCJleHAiOjE3NzczNTEwODJ9.EXqWQmtRBI3SS1iF-n-wAgFLMZK-ynQaO4_tPHGQc18
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3Njk4NzY4LCJleHAiOjE3Nzc3MDIzNjh9.joFU6ZodTV79X8vfIiZ21BJ-_-MrkQ4al28xBr_O5rI
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: |-
+    data: |+
       {
         "branchId": 1,
-        "name": "15% Off Everything",
-        "promoCode": "SAVE15",
-        "type": "PERCENTAGE",
-        "value": 15,
-        "minBillTotal": 1000,
+       "name": "200 Off Everything",
+        "promoCode": "SAVE200",
+        "type": "ITEM_FIXED",
+        "value": 200,
+        "minBillTotal": 11500,
         "startAt": "2026-01-01T00:00:00",
         "endAt": "2026-12-31T23:59:59",
         "priority": 1,
-        "maxUsesTotal": 50,
-        "maxUsesPerCustomer": 1,
+        "maxUsesTotal": 100,
+        "maxUsesPerCustomer": 2,
         "isStackable": false,
         "isActive": true,
         "createdBy": 1

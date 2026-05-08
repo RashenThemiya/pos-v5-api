@@ -10,15 +10,17 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3MzUxMTMzLCJleHAiOjE3NzczNTQ3MzN9.Dh-cn-oYmcjxOPgejXdyeUkbFiNe0BWTCciuuU1dI4I
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3Njk1NDk3LCJleHAiOjE3Nzc2OTkwOTd9.4CFREHttoYU8VJbAIfb_1p6WTp1Ul3BLCm7Xf-AQBWM
   body:
     type: json
     data: |-
       {
         "branchId": 1,
         "buyItemId": 3,
+        "buyUnitId": 2,
         "buyQty": 2,
         "getItemId": 4,
+        "getUnitId": 1,
         "getQty": 1,
         "getDiscountPercent": 100
       }

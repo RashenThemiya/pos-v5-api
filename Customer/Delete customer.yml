@@ -1,0 +1,20 @@
+info:
+  name: Delete customer
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: http://localhost:8080/api/customers/1
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3ODM0MDY0LCJleHAiOjE3Nzc4Mzc2NjR9.3K7nbSi2-M4aVoVpyx3QjH4v0TIJMa-u156FHHxBGOo
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: http://localhost:8080/api/customers/{customer_id}
