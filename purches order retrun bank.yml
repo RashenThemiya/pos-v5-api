@@ -1,0 +1,63 @@
+info:
+  name: purches order retrun bank
+  type: http
+  seq: 153
+
+http:
+  method: POST
+  url: http://139.59.13.108:8080/api/suppliers/purchase-returns
+  headers:
+    - name: authorization
+      value: Bearer YOUR_TOKEN
+    - name: content-type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"branchId\": 1,\r
+
+      \  \"supplierId\": 1,\r
+
+      \  \"supplyId\": 1,\r
+
+      \  \"refundMethod\": \"BANK_TRANSFER\",\r
+
+      \  \"bankReference\": \"BNK-TXN-20260510-001\",\r
+
+      \  \"reason\": \"Supplier refunded by bank transfer\",\r
+
+      \  \"processedBy\": 1,\r
+
+      \  \"status\": \"COMPLETED\",\r
+
+      \  \"items\": [\r
+
+      \    {\r
+
+      \      \"itemId\": 1,\r
+
+      \      \"unitId\": 1,\r
+
+      \      \"internalBatchBarcode\": \"BT-1-1-20260425201650-1DDDB98E\",\r
+
+      \      \"returnStockType\": \"DAMAGED\",\r
+
+      \      \"quantity\": 1,\r
+
+      \      \"unitCost\": 500,\r
+
+      \      \"lineTotal\": 500\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
