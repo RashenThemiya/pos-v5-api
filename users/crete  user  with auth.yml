@@ -1,0 +1,38 @@
+info:
+  name: crete  user  with auth
+  type: http
+  seq: 136
+
+http:
+  method: POST
+  url: http://139.59.13.108:8080/api/users
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fullName\": \"User With Auth\",\r
+
+      \  \"phone\": \"0770000002\",\r
+
+      \  \"branchId\": 1,\r
+
+      \  \"username\": \"userauth\",\r
+
+      \  \"email\": \"userauth@gmail.com\",\r
+
+      \  \"password\": \"123456\",\r
+
+      \  \"type\": \"CASHIER\"\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

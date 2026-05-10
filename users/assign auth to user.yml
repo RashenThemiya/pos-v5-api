@@ -1,0 +1,22 @@
+info:
+  name: assign auth to user
+  type: http
+  seq: 136
+
+http:
+  method: POST
+  url: http://139.59.13.108:8080/api/users/1/assign-auth
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r\n  \"authId\": 2\r\n}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

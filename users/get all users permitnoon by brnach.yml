@@ -1,14 +1,14 @@
 info:
-  name: http://localhost:8080/api/users/2/permissions
+  name: get all users permitnoon by brnach
   type: http
-  seq: 14
+  seq: 12
 
 http:
   method: GET
-  url: http://139.59.13.108:8080/api/users/2/permissions
+  url: http://localhost:8080/api/users/branch/1/permissions
   headers:
     - name: Authorization
-      value: Bearer ACCESS_TOKEN
+      value: Bearer YOUR_TOKEN
 
 settings:
   encodeUrl: true

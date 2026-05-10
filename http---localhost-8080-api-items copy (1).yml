@@ -1,0 +1,65 @@
+info:
+  name: http://localhost:8080/api/items copy (1)
+  type: http
+  seq: 27
+
+http:
+  method: POST
+  url: http://localhost:8080/api/items
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"branchId\": 1,\r
+
+      \  \"sku\": \"APPLE-001\",\r
+
+      \  \"name\": \"Apple\",\r
+
+      \  \"image\": null,\r
+
+      \  \"categoryId\": 5,\r
+
+      \  \"brandId\": null,\r
+
+      \  \"isWeighed\": true,\r
+
+      \  \"scaleBarcodePrefix\": \"21\",\r
+
+      \  \"isActive\": true,\r
+
+      \  \"scaleItemCode\": \"00123\",\r
+
+      \  \"baseUnit\": {\r
+
+      \    \"unitName\": \"KG\",\r
+
+      \    \"multiplierToBase\": 1,\r
+
+      \    \"barcode\": null,\r
+
+      \    \"defaultSellingPrice\": 800.00,\r
+
+      \    \"isBaseUnit\": true,\r
+
+      \    \"isActive\": true\r
+
+      \  },\r
+
+      \  \"autoGenerateBarcode\": false\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Create weighed item

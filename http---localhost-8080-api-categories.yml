@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/categories
   type: http
-  seq: 26
+  seq: 18
 
 http:
   method: POST

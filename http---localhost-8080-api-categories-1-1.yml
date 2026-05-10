@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/categories/1-1
   type: http
-  seq: 30
+  seq: 22
 
 http:
   method: DELETE
