@@ -1,0 +1,49 @@
+info:
+  name: stock ajustment
+  type: http
+  seq: 138
+
+http:
+  method: POST
+  url: http://139.59.13.108:8080/api/stocks/adjustments
+  headers:
+    - name: authorization
+      value: Bearer YOUR_TOKEN
+    - name: content-type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"branchId\": 1,\r
+
+      \  \"itemId\": 1,\r
+
+      \  \"unitId\": 1,\r
+
+      \  \"internalBatchBarcode\": \"BT-1-1-20260425201650-1DDDB98E\",\r
+
+      \  \"quantity\": 2,\r
+
+      \  \"adjustmentType\": \"AVAILABLE_TO_DAMAGED\",\r
+
+      \  \"note\": \"Found damaged during stock check\",\r
+
+      \  \"createdBy\": 1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |
+  AVAILABLE_TO_DAMAGED
+  AVAILABLE_TO_EXPIRED
+  DAMAGED_TO_AVAILABLE
+  EXPIRED_TO_AVAILABLE
+  AVAILABLE_OUT
+  AVAILABLE_IN
