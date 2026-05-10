@@ -1,0 +1,42 @@
+info:
+  name: http://localhost:8080/api/sales/returns
+  type: http
+  seq: 116
+
+http:
+  method: POST
+  url: http://localhost:8080/api/sales/returns
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4MTAwMjQyLCJleHAiOjE3NzgxMDM4NDJ9.Vi6X99Hnzofl3GH4DL1jSE7vWHQX0wN1-6pfF_iAooE
+  body:
+    type: json
+    data: |-
+      {
+        "orderId": 4,
+        "branchId": 1,
+        "customerId": null,
+        "processedBy": 1,
+        "refundMethod": "CASH",
+        "reason": "Item defective",
+        "items": [
+          {
+            "itemId": 1,
+            "internalBatchBarcode": null,
+            "quantity": 1,
+            "unitPrice": 500.00,
+            "condition": "GOOD"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Return items from an order. GOOD condition → stock added back. DAMAGED → goes to damaged stock.

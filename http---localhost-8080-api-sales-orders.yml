@@ -1,0 +1,53 @@
+info:
+  name: http://localhost:8080/api/sales/orders
+  type: http
+  seq: 107
+
+http:
+  method: POST
+  url: http://localhost:8080/api/sales/orders
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4MDg0MTUzLCJleHAiOjE3NzgwODc3NTN9.SD6WKHUs1J2_LLVvPqXr09OXExLXXY_6lzHM8BoUkGc
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "userId": 1,
+        "customerId": null,
+        "cashSessionId": 1,
+        "promotionId": null,
+        "discount": 0,
+        "rounding": 0.50,
+        "notes": "Walk-in customer",
+        "items": [
+          {
+            "itemId": 1,
+            "unitId": 1,
+            "batchBarcode": null,
+            "quantity": 2,
+            "unitPrice": 500.00,
+            "discount": 0
+          },
+          {
+            "itemId": 3,
+            "unitId": 2,
+            "batchBarcode": null,
+            "quantity": 1,
+            "unitPrice": 250.00,
+            "discount": 0
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Create a new sale. Stock deducts automatically. Use batchBarcode if you want a specific batch, leave null for FIFO.

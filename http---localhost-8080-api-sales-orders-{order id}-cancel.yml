@@ -1,0 +1,28 @@
+info:
+  name: http://localhost:8080/api/sales/orders/{order id}/cancel
+  type: http
+  seq: 113
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/sales/orders/3/cancel
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4MDkyMjU2LCJleHAiOjE3NzgwOTU4NTZ9.kjIJ0ecxIEh0igSZLiGR5hFnXi6YfsDfBEOlAf4n49g
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "cancelledBy": 1,
+        "cancelReason": "Customer changed mind"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: " Cancel an order. Stock is automatically reversed."

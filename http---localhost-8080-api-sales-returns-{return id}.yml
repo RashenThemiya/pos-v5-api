@@ -1,0 +1,25 @@
+info:
+  name: http://localhost:8080/api/sales/returns/{return id}
+  type: http
+  seq: 117
+
+http:
+  method: GET
+  url: http://localhost:8080/api/sales/returns/2
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4MTAwMjQyLCJleHAiOjE3NzgxMDM4NDJ9.Vi6X99Hnzofl3GH4DL1jSE7vWHQX0wN1-6pfF_iAooE
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get a specific return by ID.
