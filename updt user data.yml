@@ -1,0 +1,30 @@
+info:
+  name: updt user data
+  type: http
+  seq: 15
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/users/1
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fullName\": \"Updated User\",\r
+
+      \  \"phone\": \"0779999999\",\r
+
+      \  \"branchId\": 2\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

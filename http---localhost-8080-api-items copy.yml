@@ -1,0 +1,49 @@
+info:
+  name: http://localhost:8080/api/items copy
+  type: http
+  seq: 25
+
+http:
+  method: POST
+  url: http://localhost:8080/api/items
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "sku": "BAKERY-001",
+        "name": "Bakery Bun Pack",
+        "image": null,
+        "categoryId": 3,
+        "brandId": null,
+        "isWeighed": false,
+        "isActive": true,
+
+        "minStock": 10,
+        "maxStock": 100,
+
+        "baseUnit": {
+          "unitName": "PACK",
+          "multiplierToBase": 1,
+          "barcode": null,
+          "defaultSellingPrice": 180.00,
+          "isBaseUnit": true,
+          "isActive": true
+        },
+
+        "autoGenerateBarcode": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Create normal item without barcode and auto-generate

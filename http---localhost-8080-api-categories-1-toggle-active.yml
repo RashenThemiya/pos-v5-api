@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/categories/1/toggle-active
   type: http
-  seq: 32
+  seq: 24
 
 http:
   method: PATCH

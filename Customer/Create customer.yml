@@ -1,0 +1,33 @@
+info:
+  name: Create customer
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/api/customers
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3ODM1NDYzLCJleHAiOjE3Nzc4MzkwNjN9.0Pv7FfdHog587daTK6s76J_eVoPumKyCpcAjXgsbQo0
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "name": "sachintha roshan",
+        "nic": "200012359678",
+        "phone": "0775550567",
+        "email": "roshan@gmail.com",
+        "address": "Colombo",
+        "creditLimit": 5000,
+        "isActive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,7 +1,7 @@
 info:
-  name: http://localhost:8080/api/users/1/roles
+  name: assign role to user
   type: http
-  seq: 22
+  seq: 136
 
 http:
   method: POST
@@ -13,10 +13,7 @@ http:
       value: application/json
   body:
     type: json
-    data: |-
-      {
-        "roleId": 2
-      }
+    data: "{\r\n  \"roleId\": 1\r\n}"
 
 settings:
   encodeUrl: true

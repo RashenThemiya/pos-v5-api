@@ -1,0 +1,18 @@
+info:
+  name: get item by barcode
+  type: http
+  seq: 29
+
+http:
+  method: GET
+  url: http://localhost:8080/api/items/branch/1/barcode/8901030865703
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

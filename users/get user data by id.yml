@@ -1,0 +1,17 @@
+info:
+  name: get user data by id
+  type: http
+  seq: 19
+
+http:
+  method: GET
+  url: http://139.59.13.108:8080/api/users/1
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3ODExODc5LCJleHAiOjE3Nzc4MTU0Nzl9.u7HM_PA7u-sFLC8r6djkbgnTUQkPbWqF7XP_bNs7QFc
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

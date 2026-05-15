@@ -1,0 +1,22 @@
+info:
+  name: Item without barcode, auto-generate, with image upload
+  type: http
+  seq: 36
+
+http:
+  method: POST
+  url: http://localhost:8080/api/items
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Create normal item without barcode, auto-generate barcode, with image upload

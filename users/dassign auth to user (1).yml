@@ -1,11 +1,11 @@
 info:
-  name: http://localhost:8080/api/users/1/permissions
+  name: dassign auth to user (1)
   type: http
-  seq: 25
+  seq: 136
 
 http:
-  method: GET
-  url: http://139.59.13.108:8080/api/users/1/permissions
+  method: DELETE
+  url: http://139.59.13.108:8080/api/users/1/deassign-auth
   headers:
     - name: Authorization
       value: Bearer YOUR_TOKEN

@@ -1,27 +1,59 @@
 info:
   name: http://localhost:8080/api/items/1-1 (1)
   type: http
+<<<<<<< HEAD
+  seq: 44
+=======
   seq: 40
+>>>>>>> 23b641a9e812a1f25115e4358960d0558331d1cc
 
 http:
   method: PUT
   url: http://localhost:8080/api/items/1
   headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
     - name: Content-Type
       value: application/json
-    - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzczNTE4NzAzLCJleHAiOjE3NzM1MjIzMDN9.uFXI5rgUxWacinfhgukUmJAGcLzi7Y4i8u3IVSUBEwc
   body:
     type: json
-    data: |-
-      {
-        "branchId": 1,
-        "sku": "BEV-001",
-        "name": "Coca Cola 330ml Updated",
-        "categoryId": 1,
-        "isWeighed": false,
-        "isActive": true
-      }
+    data: "{\r
+
+      \  \"branchId\": 1,\r
+
+      \  \"sku\": \"SHAMPOO-001\",\r
+
+      \  \"name\": \"Clinic Plus Shampoo 180ml Updated\",\r
+
+      \  \"image\": null,\r
+
+      \  \"categoryId\": 2,\r
+
+      \  \"brandId\": 1,\r
+
+      \  \"isWeighed\": false,\r
+
+      \  \"isActive\": true,\r
+
+      \  \"baseUnit\": {\r
+
+      \    \"unitName\": \"BOTTLE\",\r
+
+      \    \"multiplierToBase\": 1,\r
+
+      \    \"barcode\": \"8901030865703\",\r
+
+      \    \"defaultSellingPrice\": 700.00,\r
+
+      \    \"isBaseUnit\": true,\r
+
+      \    \"isActive\": true\r
+
+      \  },\r
+
+      \  \"autoGenerateBarcode\": false\r
+
+      }"
   auth: inherit
 
 settings:
