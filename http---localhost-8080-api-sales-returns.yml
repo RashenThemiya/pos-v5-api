@@ -24,7 +24,7 @@ http:
         "items": [
           {
             "itemId": 1,
-            "internalBatchBarcode": null,
+                                "internalBatchBarcode": null,
             "quantity": 1,
             "unitPrice": 500.00,
             "condition": "GOOD"
