@@ -5,12 +5,12 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/api/sales/orders/4/payments
+  url: http://localhost:8080/api/sales/orders/6/payments
   headers:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4MTAwMjQyLCJleHAiOjE3NzgxMDM4NDJ9.Vi6X99Hnzofl3GH4DL1jSE7vWHQX0wN1-6pfF_iAooE
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4NDMxMTc3LCJleHAiOjE3Nzg0MzQ3Nzd9.5tTdqtiE_E4rilgSMNhQ57Ywv92W3WxXVl6OJZ_nZTk
   body:
     type: json
     data: |-
@@ -19,7 +19,7 @@ http:
         "payments": [
           {
             "paymentMethod": "CASH",
-            "amount": 1000.00,
+            "amount": 750.50,
             "tenderedAmount": 1500.00,
             "referenceNo": null,
             "note": null

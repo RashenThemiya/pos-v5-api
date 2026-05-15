@@ -10,7 +10,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4MDg0MTUzLCJleHAiOjE3NzgwODc3NTN9.SD6WKHUs1J2_LLVvPqXr09OXExLXXY_6lzHM8BoUkGc
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4NDMxMTc3LCJleHAiOjE3Nzg0MzQ3Nzd9.5tTdqtiE_E4rilgSMNhQ57Ywv92W3WxXVl6OJZ_nZTk
   body:
     type: json
     data: |-
@@ -19,10 +19,10 @@ http:
         "userId": 1,
         "customerId": null,
         "cashSessionId": 1,
-        "promotionId": null,
-        "discount": 0,
+        "promotionId": 1,
+        "discount": 500,
         "rounding": 0.50,
-        "notes": "Walk-in customer",
+        "notes": "Walk-in customer2",
         "items": [
           {
             "itemId": 1,
