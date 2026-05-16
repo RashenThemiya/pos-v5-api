@@ -8,7 +8,7 @@ http:
   url: http://139.59.13.108:8080/api/stocks/counts/1
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3NDkyMzM4LCJleHAiOjE3Nzc0OTU5Mzh9.__RfxX7EEFDKrKg4zLHl-K21s0Y5b9poeZxjbY0YcN4
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4Njk5NDM3LCJleHAiOjE4MTQ2OTk0Mzd9.In9_qFqmuVVXTyFZuJbiWwgGPrwWmn9Ce4-0NuPs1GM
     - name: Content-Type
       value: application/json
   body:

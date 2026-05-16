@@ -8,7 +8,7 @@ http:
   url: http://139.59.13.108:8080/api/stocks/batches/branch/1
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3NTM3MzUwLCJleHAiOjE3Nzc1NDA5NTB9.wGUfpmfgNmif-90xYhLFLLp39Ez-MI92JuPJ9Aaqsmo
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4NDMwNDQ4LCJleHAiOjE4MTQ0MzA0NDh9.pWNoTzsWXgthy5V9KNfQYOMZYmz4u86ONiiJ2jmKGGE
     - name: Content-Type
       value: application/json
   body:

@@ -5,12 +5,12 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/api/stock/transfers
+  url: http://139.59.13.108:8080/api/stock/transfers
   headers:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc0NTU4OTYxLCJleHAiOjE3NzQ1NjI1NjF9.cOjmynS1Eg_sonfIBfNpsGhyWEBP1nVy-MDLf9axMVI
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4NDMwNDQ4LCJleHAiOjE4MTQ0MzA0NDh9.pWNoTzsWXgthy5V9KNfQYOMZYmz4u86ONiiJ2jmKGGE
   body:
     type: json
     data: |-

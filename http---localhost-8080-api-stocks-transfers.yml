@@ -8,7 +8,7 @@ http:
   url: http://139.59.13.108:8080/api/stocks/transfers
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3NTQyOTAwLCJleHAiOjE3Nzc1NDY1MDB9.jJ0Ib72kMyWFRU2EnsPb-O86OYpEjyPBh3URfgWG3NQ
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4NDMwNDQ4LCJleHAiOjE4MTQ0MzA0NDh9.pWNoTzsWXgthy5V9KNfQYOMZYmz4u86ONiiJ2jmKGGE
     - name: Content-Type
       value: application/json
   body:
@@ -21,8 +21,8 @@ http:
         "note": "Transfer to branch 2",
         "items": [
           {
-            "itemId": 10,
-            "internalBatchBarcode": "BT-1-10-XXXX",
+            "itemId": 1,
+            "internalBatchBarcode": "BT-1-1-20260510111016-6D76DAFA",
             "quantity": 20
           }
         ]
