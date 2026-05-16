@@ -1,0 +1,83 @@
+info:
+  name: http://localhost:8080/api/sales/process
+  type: http
+  seq: 120
+
+http:
+  method: POST
+  url: http://localhost:8080/api/sales/process
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc4ODU4OTkxLCJleHAiOjE3Nzg4NjI1OTF9.B5R5tF0D0NUtGe3Qbudkh_l0ex7foCyOxv-XCwfQgv0
+  body:
+    type: json
+    data: |-
+      {
+        "branchId": 1,
+        "userId": 5,
+        "customerId": null,
+        "cashSessionId": 3,
+
+        "items": [
+          {
+            "itemId": 3,
+            "unitId": 2,
+            "quantity": 3,
+            "unitPrice": 100.00,
+            "batchBarcode": null,
+            "promotionId": 5,
+            "discount": 30.00
+          },
+          {
+            "itemId": 1,
+            "unitId": 1,
+            "quantity": 2,
+            "unitPrice": 200.00,
+            "batchBarcode": "BT-1-20-1716700000-abc",
+            "promotionId": 8,
+            "discount": 50.00
+          },
+          {
+            "itemId": 30,
+            "unitId": 1,
+            "quantity": 1,
+            "unitPrice": 150.00,
+            "batchBarcode": null,
+            "promotionId": null,
+            "discount": 0
+          }
+        ],
+
+        "billPromotionIds": [15],
+        "discount": 50.00,
+
+        "rounding": 0.50,
+        "notes": "Regular customer",
+
+        "payments": [
+          {
+            "paymentMethod": "CASH",
+            "amount": 420.50,
+            "tenderedAmount": 500.00,
+            "referenceNo": null
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |+
+  This is new route for the sales order, all item adding to oreder and payment done in this one route. 
+
+
+  1. Rounding (for round the total value)
+
+  It is completely optional. If you don't need it, just send "rounding": 0 or don't send it at all — the backend already does nvl() on it so null = 0. There's no rule forcing you to put 0.50. 
+
