@@ -1,0 +1,45 @@
+info:
+  name: sacal ssetting create
+  type: http
+  seq: 159
+
+http:
+  method: POST
+  url: http://localhost:8080/api/scale-barcode-settings
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+  body:
+    type: json
+    data: "{\r
+
+      \  \"branchId\": 1,\r
+
+      \  \"prefix\": \"21\",\r
+
+      \  \"totalLength\": 13,\r
+
+      \  \"itemCodeStart\": 3,\r
+
+      \  \"itemCodeLength\": 4,\r
+
+      \  \"valueType\": \"WEIGHT\",\r
+
+      \  \"valueStart\": 7,\r
+
+      \  \"valueLength\": 5,\r
+
+      \  \"valueDecimalPlaces\": 3,\r
+
+      \  \"isActive\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
