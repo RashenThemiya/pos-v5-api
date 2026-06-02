@@ -1,0 +1,30 @@
+info:
+  name: assign permtion to role (2)
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/api/roles/1/permissions
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer YOUR_TOKEN
+  body:
+    type: json
+    data: |-
+      {
+        "authorityCodes": [
+          "ROLE_CREATE",
+          "ROLE_UPDATE",
+          "ROLE_DELETE"
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
