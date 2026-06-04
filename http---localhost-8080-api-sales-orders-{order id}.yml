@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/sales/orders/{order id}
   type: http
-  seq: 108
+  seq: 110
 
 http:
   method: GET

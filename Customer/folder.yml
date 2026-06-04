@@ -1,7 +1,7 @@
 info:
   name: Customer
   type: folder
-  seq: 110
+  seq: 113
 
 request:
   auth: inherit

@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/sales/orders/invoice/{invoice number}
   type: http
-  seq: 109
+  seq: 111
 
 http:
   method: GET
