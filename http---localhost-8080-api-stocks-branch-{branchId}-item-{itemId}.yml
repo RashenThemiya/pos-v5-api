@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/stocks/branch/{branchId}/item/{itemId}
   type: http
-  seq: 111
+  seq: 117
 
 http:
   method: GET

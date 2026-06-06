@@ -1,7 +1,7 @@
 info:
   name: http://localhost:8080/api/sales/orders/{order id}/payments
   type: http
-  seq: 114
+  seq: 123
 
 http:
   method: POST
